@@ -15,8 +15,6 @@ const calculate = () => {
 			const currency1 = currencyOne.value;
 			const currency2 = currencyTwo.value;
 
-			console.log(data);
-
 			const rate = data.data[currency2];
 			rateInfo.textContent = `1 ${currency1} = ${rate.toFixed(4)} ${currency2}`;
 			amountTwo.value = (amountOne.value * rate).toFixed(2);
